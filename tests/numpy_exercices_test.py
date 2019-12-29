@@ -116,4 +116,24 @@ class NumpyExercicesTest(unittest.TestCase):
         result = npex.get_array_from_last_two_rows()
         
         self.assertTrue(np.array_equal(expected, result))
+
+    #18) Get the sum of all elements in useful_matrix
+    def test_must_sum_all_elements_in_the_array(self):
+        expected = 325
+        result = npex.get_matrix_sum()
         
+        self.assertEqual(expected, result)
+
+    #19) Get the stardard deviation of useful_matrix
+    def test_must_get_standard_deviation(self):
+        expected = 7.211102550927978
+        result = npex.get_standard_deviation()
+        
+        self.assertEqual(expected, result)
+
+    #20) Get the sum of the columns
+    def test_must_sum_columnds(self):
+        expected = np.asarray([55, 60, 65, 70, 75])
+        result = npex.sum_columns()
+
+        self.assertTrue(np.array_equal(expected, result))

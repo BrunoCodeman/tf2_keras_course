@@ -64,7 +64,18 @@ def get_array_with_three_values():
 def get_array_from_last_row():
     return useful_matrix[4]
 
-
  #17) Get array with the last two rows 
 def get_array_from_last_two_rows():
     return useful_matrix[3:]
+
+#18) Get the sum of all elements in useful_matrix
+def get_matrix_sum():
+    return useful_matrix.sum()
+
+#19) Get the stardard deviation of useful_matrix
+def get_standard_deviation():
+    return useful_matrix.std()
+
+#20) Get the sum of the columns
+def sum_columns():
+    return useful_matrix.sum(axis=0)
