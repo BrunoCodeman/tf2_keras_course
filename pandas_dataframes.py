@@ -50,4 +50,4 @@ my_df.describe()
 my_df.info()
 
 # Info about data types
-my_df.dtypes()
+my_df.dtypes
